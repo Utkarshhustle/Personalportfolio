@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utkarsh Sharma</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #93ed9c;
+        }
+
+        header {
+            background-color: #7ee2db;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #4CAF50;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 0.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #45a049;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        h1, h2, h3 {
+            color: #0b0b0b;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg');
+            background-size: cover;
+            color: #191818;
+            text-align: center;
+            padding: 100px 0;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero img {
+            width: 150px; /* Adjust the width as needed */
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .skill {
+            flex: 1 1 calc(33.3333% - 20px);
+            margin-bottom: 20px;
+            background-color: #FFD700;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .project {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .project:hover img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-title, .project-description {
+            color: #0f0e0e;
+            margin: 0;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #0a0a0a;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="image/new.jpeg" alt="Your Image" style="width: 400px; border-radius: 50%;">
+        <h1>Utkarsh Sharma</h1>
+        <p>Personal Portfolio Website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <img src="image/logo.png" alt="Your Image" style="width: 220px; border-radius: 50%;">
+        <p>Showcasing my work and skills</p>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey there! I'm Utkarsh Sharma, hailing from the picturesque land of Himachal Pradesh and currently finding my stride in the world of technology at IIT Guwahati, pursuing my B-Tech. At 19, I've got an insatiable passion for web development that keeps me glued to my screen, constantly exploring the realms of coding and design.
+
+            Beyond the classroom, I'm immersed in the thrilling world of entrepreneurship. Holding an active role as an Associate Manager at Udgam, the vibrant entrepreneurship fest at IIT Guwahati, has been an exhilarating journey. It's where I channel my drive for innovation, collaboration, and turning ideas into reality.
+            
+            When I'm not typing away lines of code or diving into entrepreneurial endeavors, you'll likely find me exploring new technologies, seeking inspiration from industry leaders, or simply taking in the beauty of the surrounding nature.
+            
+            Feel free to connect if you share a passion for web development, entrepreneurship, or just want to swap exciting ideas over a virtual coffee!</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Proficient</p>
+            </div>
+        </div>
+            <h2>Skills</h2>
+            <div class="skill">
+                <h3>Video Editing</h3>
+                <p>Proficient</p>
+            </div>
+            <div class="skill">
+                <h3>Public Speaking</h3>
+                <p>Proficient</p>
+        
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            
+            <h3>Welcome to my personal portfolio! Crafted with passion and dedication, this website is a culmination of countless hours spent refining my skills and experiences. Using a blend of resources, including Udgam Internfair, insightful YouTube tutorials, and the vast knowledge from Google, I've meticulously designed and developed this platform to showcase my professional journey.
+
+                From the intricate details to the overall design, every aspect of this portfolio reflects my commitment to excellence. Through HTML, I've sculpted a space that encapsulates my projects, achievements, and aspirations. It's a representation of my growth and learning, a testament to the hard work and effort poured into its creation.
+                
+                I invite you to explore my portfolio, a testament to my technical prowess and creative vision. Thank you for visiting, and I hope you find inspiration and insight within these pages."</h3>
+        </div>
+
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: utkarshhustle@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/utkarsh-sharma-a38460287" target="_blank">Your LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">Your GitHub Profile</a></p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Your Name - Portfolio</p>
+    </footer>
+</body>
+
+</html>
